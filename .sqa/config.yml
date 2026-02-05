@@ -1,0 +1,64 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: feature/pynblint
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/PalomoIFCA/testing-notebooks:
+      branch: main
+      repo: https://github.com/PalomoIFCA/testing-notebooks
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/testing-notebooks git:
+        commands:
+        - /usr/bin/env sh .sqa/script.cheeky-lemon-stoat.sh
+        container: qc.acc_scummy-ruby-dragonfly
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testing-notebooks find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.hasty-malachite-bison.sh
+        container: qc.doc_chummy-cinnamon-crab
+      github.com/PalomoIFCA/testing-notebooks git:
+        commands:
+        - /usr/bin/env sh .sqa/script.stinky-scarlet-wolfhound.sh
+        container: qc.doc_grumpy-gold-oyster
+      github.com/PalomoIFCA/testing-notebooks markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.squirrely-eggplant-squid.sh
+        container: qc.doc_crabby-blue-ocelot
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testing-notebooks licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.sunny-red-ant.sh
+        container: qc.lic_lousy-ecru-zebu
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/testing-notebooks bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.skinny-tan-seal.sh
+        container: qc.sec_thirsty-black-bombay
+  QC.Sty:
+    repos:
+      github.com/PalomoIFCA/testing-notebooks pynblint.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.shaky-zucchini-bird.sh
+        container: qc.sty_flimsy-periwinkle-jellyfish
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/testing-notebooks pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.blurry-alizarin-tetra.sh
+        container: qc.uni_squirrely-yellow-dolphin
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testing-notebooks get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.scanty-chestnut-whale.sh
+        container: qc.ver_squirrely-ruby-retriever
+timeout: 5400
