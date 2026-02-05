@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testing-notebooks &&
-    pynblint.py
+    flake8 .
 )
