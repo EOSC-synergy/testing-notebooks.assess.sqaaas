@@ -1,5 +1,5 @@
 services:
-  qc.acc_boysenberry_reckless_goat:
+  qc.acc_pumpkin_fierce_butterfly:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,17 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_amaranth_nurturing_catfish:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
-      dockerfile: Dockerfile
-    command: sleep 6000000
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.doc_arctic_understanding_capybara:
+  qc.doc_banana_warm_bullfrog:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -25,7 +15,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_hunter_rational_ibis:
+  qc.doc_cinnabar_inventive_cougar:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
       dockerfile: Dockerfile
@@ -35,7 +25,17 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_marina_shrewd_baboon:
+  qc.doc_ginger_friendly_porpoise:
+    build:
+      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
+      dockerfile: Dockerfile
+    command: sleep 6000000
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.lic_heather_innocent_buffalo:
     command: sleep 6000000
     image: eoscsynergy/sqaaas-licensee:9.17.0
     volumes:
@@ -43,7 +43,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.sec_tan_shrewd_sloth:
+  qc.sec_brown_zealous_alligator:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sec/bandit
       dockerfile: Dockerfile
@@ -53,15 +53,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.sty_alabaster_determined_kraken:
-    command: sleep 6000000
-    image: pipelinecomponents/flake8:0.19.0
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.sty_thistle_apathetic_condor:
+  qc.sty_mauve_brilliant_gazelle:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pynblint
       dockerfile: Dockerfile
@@ -71,7 +63,15 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.uni_cerise_inspired_bullfrog:
+  qc.sty_pansy_goofy_roadrunner:
+    command: sleep 6000000
+    image: pipelinecomponents/flake8:0.19.0
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.uni_ivory_foolish_chipmunk:
     command: sleep 6000000
     image: eoscsynergy/sqaaas-pytest:7.1.3-alpha
     volumes:
@@ -79,7 +79,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.ver_carmine_mature_meerkat:
+  qc.ver_ceru_responsible_hornbill:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
       dockerfile: Dockerfile
