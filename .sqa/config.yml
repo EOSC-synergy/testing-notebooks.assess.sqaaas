@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testing-notebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.denim_thoughtful_owl.sh
-        container: qc.acc_fog_logical_seal
+        - /usr/bin/env sh .sqa/script.rose_meticulous_seal.sh
+        container: qc.acc_sapphire_elated_roc
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testing-notebooks find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.echelon_articulate_albatross.sh
-        container: qc.doc_plum_studious_wolverine
+        - /usr/bin/env sh .sqa/script.prussian_amiable_dragonfly.sh
+        container: qc.doc_espresso_sincere_albatross
       github.com/PalomoIFCA/testing-notebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.caramel_driven_armadillo.sh
-        container: qc.doc_peach_understanding_finch
+        - /usr/bin/env sh .sqa/script.onyx_upbeat_gull.sh
+        container: qc.doc_aquamarine_sad_ibis
       github.com/PalomoIFCA/testing-notebooks markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.grape_clever_gazelle.sh
-        container: qc.doc_navy_outgoing_unicorn
+        - /usr/bin/env sh .sqa/script.obsidian_helpful_hare.sh
+        container: qc.doc_porcelain_loyal_rabbit
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testing-notebooks licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.orchid_adaptable_grasshopper.sh
-        container: qc.lic_cherry_sarcastic_gorilla
+        - /usr/bin/env sh .sqa/script.mango_careful_seahorse.sh
+        container: qc.lic_cinnabar_unique_dolphin
   QC.Sec:
     repos:
       github.com/PalomoIFCA/testing-notebooks bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.sepia_industrious_owl.sh
-        container: qc.sec_lavender_compassionate_alpaca
+        - /usr/bin/env sh .sqa/script.peony_diligent_lobster.sh
+        container: qc.sec_mahogany_timid_kraken
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testing-notebooks flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.sand_helpful_goose.sh
-        container: qc.sty_maroon_zealous_vulture
+        - /usr/bin/env sh .sqa/script.sepia_proud_sphinx.sh
+        container: qc.sty_chili_sympathetic_komodo
       github.com/PalomoIFCA/testing-notebooks pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.linen_zany_moth.sh
-        container: qc.sty_mint_open_roadrunner
+        - /usr/bin/env sh .sqa/script.tide_brilliant_sphinx.sh
+        container: qc.sty_copper_timid_rattlesnake
   QC.Uni:
     repos:
       github.com/PalomoIFCA/testing-notebooks pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.apricot_rustic_rabbit.sh
-        container: qc.uni_green_energetic_turkey
+        - /usr/bin/env sh .sqa/script.lemon_aware_hamster.sh
+        container: qc.uni_denim_courageous_catfish
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testing-notebooks get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.khaki_cheerful_squid.sh
-        container: qc.ver_taupe_responsible_reindeer
+        - /usr/bin/env sh .sqa/script.pink_inventive_raven.sh
+        container: qc.ver_maroon_zany_elephant
 timeout: 5400
