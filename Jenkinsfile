@@ -28,6 +28,7 @@ pipeline {
                         credentialsId: 'None'
 
                                      )
+                    echo "DEBUG project_repos: ${projectConfig.config.project_repos}"
                     buildStages(projectConfig)
                 }
             }
