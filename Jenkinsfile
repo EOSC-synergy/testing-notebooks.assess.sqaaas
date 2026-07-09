@@ -24,11 +24,7 @@ pipeline {
                     projectConfig = pipelineConfig(
                         configFile: '.sqa/config.yml',
                         scmConfigs: [ localBranch: true ],
-                        validatorDockerImage: 'eoscsynergy/jpl-validator:2.4.0',
-                        credentialsId: 'None'
-
-                                     )
-                    echo "DEBUG project_repos: ${projectConfig.config.project_repos}"
+                        validatorDockerImage: 'eoscsynergy/jpl-validator:2.4.0')
                     buildStages(projectConfig)
                 }
             }
